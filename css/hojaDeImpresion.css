@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 15vh;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+main {
+    width: 90%;
+    height: 100vh;
+    margin: 0 5%; 
+
+}
+.contenedor-main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;    
+    text-align: center;   
+}
+#lista-recetas {
+    width: 100%;
+    height: auto;
+}
+.receta-item {
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 5px;
+}
+
+p {
+    width: 30%;
+    height: 100%;
+    font-size: 0.8em;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+#titulo-receta {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    border-radius: 5px;    
+    text-align: center;
+    font-size: 2em;
+
+}
+#masa-section-input{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 5px;    
+    text-align: center;
+    font-size: 2em;
+    top: 0;
+}
+.btn-receta-item{
+    width: 100%;
+    height: 7vh;  
+    margin: 0; 
+    border: 1px solid #000;
+    background-color: #e0e0e0;   
+    font-size: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label,h3 {
+    width: 70%;
+    height: 100%;
+    border: 1px solid #000;
+    align-items: start;
+    font-size: 0.8em;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.receta-item {
+    width:100%;
+    height: auto;
+    display: flex;    
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+}
+#recetas-lista{
+    width: 100%;
+    height: 100%;   
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-item-impresion {
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;    
+    text-align: center;   
+}
+#btnImprimir{
+    width: 20%;
+    height: 50px; 
+    font-size: 1.5em;
+   
+}
+
+#hoja-impresion-container{
+    width: 70%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+     
+}
+#lista-recetas{
+    width: 100%;
+    min-height: auto;    
+    margin-top: 2%;
+}
+#masaCantidadCuadraditos{
+    width: 100%;
+    height: 7vh;  
+    margin-left: 2%; 
+    border: 1px solid #000;
+    font-size: 0.7em;
+    text-align: center;
+}
+.descripcion-producto-item{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    margin-top: 1.5%;
+    font-size: 1em;
+    color: #000;    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@media print {
+    main {
+        height: auto;
+        min-height: auto ;
+    }
+    body *{
+        visibility: hidden;
+    }
+    #hoja-impresion-container, #hoja-impresion-container * {
+        visibility: visible;
+    }
+    #hoja-impresion-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+}
