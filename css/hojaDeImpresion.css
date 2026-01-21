@@ -130,7 +130,7 @@ input {
     align-items: center;    
     text-align: center;   
 }
-#btnImprimir{
+#btnImprimir,button#btn-reinicio{
     width: 20%;
     height: 50px; 
     font-size: 1.5em;
