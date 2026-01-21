@@ -136,6 +136,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     });
 });
+
+function botonReinicio(inputQueLimpiar){
+    if(inputQueLimpiar.length===1){
+        mostrarRecetaDeMasa(inputQueLimpiar);
+    }else{
+        limpiarinput(inputQueLimpiar);
+    }
+}
+
 function limpiarinput(inputs){   
     inputs.forEach(input => {
         input.value='';
