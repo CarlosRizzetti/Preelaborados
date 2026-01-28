@@ -16,15 +16,19 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #f8f8f8;
-    border-bottom: 1px solid #ddd;
+    background-color: #0d81e0;
+    border: 1px solid #050505;
+    margin-bottom: 1%;
+    color: antiquewhite;
 }
+
 
 main {
     width: 90%;
     height: 100vh;
     margin: 0 5%; 
-
+    border: 0.5px solid #000;
+    background-color: #e6edf0;
 }
 .contenedor-main {
     width: 100%;
@@ -130,11 +134,33 @@ input {
     align-items: center;    
     text-align: center;   
 }
-#btnImprimir,button#btn-reinicio{
+#btnImprimir,button#btn-reinicio {
     width: 20%;
     height: 50px; 
-    font-size: 1.5em;
-   
+    font-size: 1.2em;
+    margin: 2%;
+    border: none;
+    border-radius: 5px;
+    background-color: #989b9c;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+button#btn-inicio {
+    width: 20%;
+    height: 50px; 
+    font-size: 1.2em;
+    margin: 2%;
+    border: none;
+    border-radius: 5px;
+    background-color: #989b9c;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
 }
 
 #hoja-impresion-container{

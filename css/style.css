@@ -12,11 +12,15 @@ header{
     height: 25vh;
     font-size: 3em;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: #f8f8f8;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;   
+    background-color: #0d81e0;
+    border: 1px solid #050505;
+    margin-bottom: 1%;
 }
+
 main{
     width: 90%;
     margin: auto;
@@ -44,4 +48,7 @@ button{
 button a{
     text-decoration: none;
     color: #000;
+}
+button:hover{
+    background-color: #d4d4d4;
 }

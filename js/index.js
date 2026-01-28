@@ -1,3 +1,4 @@
+import { header }  from "./CONST.js";
 const contenedorMain = document.getElementById('contenedor-main');
 const btn=document.querySelectorAll('button');
 
@@ -11,6 +12,7 @@ btn.forEach(button => {
             <button id="recetas-container_Masa"><a href="hojaDeImpresion.html?sector=Masa" target="_blank">Masa</a></button>
             <button id="recetas-container_Masa de chocolate"><a href="hojaDeImpresion.html?sector=Masa de chocolate" target="_blank">Masa de chocolate</a></button></button>
             `;
+            header.innerHTML +=`<button id="btn-reinicio"><a href="index.html">Inicio</a></button>`;
         }
     });
 });
