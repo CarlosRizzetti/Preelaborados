@@ -104,7 +104,7 @@ export const recetas = [
     mercaderia: "DDL Y COCO",
     ingredientes: [      
       { nombre: "DLECHE REPOSTERO PERGAMINO", cantidad: 0.035 },      
-      { nombre: "COCO RALLADO", cantidad: 0.180 }
+      { nombre: "COCO RALLADO", cantidad: 0.00262 }
     ]
   },
   {

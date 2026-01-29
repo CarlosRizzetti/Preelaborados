@@ -29,6 +29,8 @@ export class BudinClase {
                 } if (e.target.value > 0) {
                     const cantidad = e.target.value;
                     const recetaElegida = budines.find(receta => receta.mercaderia === e.target.id);
+                    const crumble = recetaElegida.crumble;
+                    console.log(crumble);
                     hojaImpresionContainer.innerHTML += `  
                                 <section class="descripcion-producto-item">
                                   <h3>RECETA DE BUDINES ${e.target.id} </h3> <p> ${e.target.value}Budines </p>
@@ -44,6 +46,23 @@ export class BudinClase {
                                  </section>                
                                    `;
                     });
+                    if (crumble) {
+                        hojaImpresionContainer.innerHTML += `  
+                                <section class="descripcion-producto-item">
+                                  <h3>CRUMBLE PARA BUDINES ${e.target.id} </h3> 
+                                </section> `;
+                        crumble.forEach(ingrediente => {
+                            let ing = ingrediente.cantidad;
+                            let total = Number(ing) * Number(cantidad);
+                            hojaImpresionContainer.innerHTML += `  
+                                                   
+                                    <section class="receta-item">
+                                       <label>${ingrediente.nombre}</label> 
+                                       <p>${total.toFixed(2)}</p>
+                                     </section>                
+                                       `;
+                        });
+                    }
                 }
             });
         });
