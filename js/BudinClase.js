@@ -30,10 +30,11 @@ export class BudinClase {
                     const cantidad = e.target.value;
                     const recetaElegida = budines.find(receta => receta.mercaderia === e.target.id);
                     const crumble = recetaElegida.crumble;
-                    console.log(crumble);
+                    const agregados=recetaElegida.agregados
+                    const mermelada=recetaElegida.mermelada                     
                     hojaImpresionContainer.innerHTML += `  
                                 <section class="descripcion-producto-item">
-                                  <h3>RECETA DE BUDINES ${e.target.id} </h3> <p> ${e.target.value}Budines </p>
+                                  <h3>Receta para ${e.target.id} </h3> <p> ${e.target.value}Budines </p>
                                 </section> `;
                     recetaElegida.ingredientes.forEach(ingrediente => {
                         let ing = ingrediente.cantidad;
@@ -49,7 +50,41 @@ export class BudinClase {
                     if (crumble) {
                         hojaImpresionContainer.innerHTML += `  
                                 <section class="descripcion-producto-item">
-                                  <h3>CRUMBLE PARA BUDINES ${e.target.id} </h3> 
+                                  <h3>Crumble para ${e.target.id} </h3> 
+                                </section> `;
+                        crumble.forEach(ingrediente => {
+                            let ing = ingrediente.cantidad;
+                            let total = Number(ing) * Number(cantidad);
+                            hojaImpresionContainer.innerHTML += `  
+                                                   
+                                    <section class="receta-item">
+                                       <label>${ingrediente.nombre}</label> 
+                                       <p>${total.toFixed(2)}</p>
+                                     </section>                
+                                       `;
+                        });
+                    }
+                    if(agregados){
+                         hojaImpresionContainer.innerHTML += `  
+                                <section class="descripcion-producto-item">
+                                  <h3>Agregados para budines ${e.target.id} </h3> 
+                                </section> `;
+                        crumble.forEach(ingrediente => {
+                            let ing = ingrediente.cantidad;
+                            let total = Number(ing) * Number(cantidad);
+                            hojaImpresionContainer.innerHTML += `  
+                                                   
+                                    <section class="receta-item">
+                                       <label>${ingrediente.nombre}</label> 
+                                       <p>${total.toFixed(2)}</p>
+                                     </section>                
+                                       `;
+                        });
+                    }
+                    if (mermelada){
+                         hojaImpresionContainer.innerHTML += `  
+                                <section class="descripcion-producto-item">
+                                  <h3>Mermelada de frutos rojos ${e.target.id} </h3> 
                                 </section> `;
                         crumble.forEach(ingrediente => {
                             let ing = ingrediente.cantidad;
