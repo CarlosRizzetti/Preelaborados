@@ -50,7 +50,7 @@ export class BudinClase {
                     if (crumble) {
                         hojaImpresionContainer.innerHTML += `  
                                 <section class="descripcion-producto-item">
-                                  <h3>Crumble para ${e.target.id} </h3> 
+                                  <h3 class="titulo-crumble">Crumble para ${e.target.id} </h3> 
                                 </section> `;
                         crumble.forEach(ingrediente => {
                             let ing = ingrediente.cantidad;
@@ -67,9 +67,9 @@ export class BudinClase {
                     if(agregados){
                          hojaImpresionContainer.innerHTML += `  
                                 <section class="descripcion-producto-item">
-                                  <h3>Agregados para budines ${e.target.id} </h3> 
+                                  <h3 class="titulo-agregados">Agregados para budines ${e.target.id} </h3> 
                                 </section> `;
-                        crumble.forEach(ingrediente => {
+                        agregados.forEach(ingrediente => {
                             let ing = ingrediente.cantidad;
                             let total = Number(ing) * Number(cantidad);
                             hojaImpresionContainer.innerHTML += `  
@@ -84,9 +84,9 @@ export class BudinClase {
                     if (mermelada){
                          hojaImpresionContainer.innerHTML += `  
                                 <section class="descripcion-producto-item">
-                                  <h3>Mermelada de frutos rojos ${e.target.id} </h3> 
+                                  <h3 class="titulo-mermelada">Mermelada de frutos rojos ${e.target.id} </h3> 
                                 </section> `;
-                        crumble.forEach(ingrediente => {
+                        mermelada.forEach(ingrediente => {
                             let ing = ingrediente.cantidad;
                             let total = Number(ing) * Number(cantidad);
                             hojaImpresionContainer.innerHTML += `  

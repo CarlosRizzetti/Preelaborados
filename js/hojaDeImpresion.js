@@ -5,7 +5,8 @@ import { header, hojaImpresionContainer, inputCantidadMasa } from "./CONST.js";
 import { mostrarRecetaDeMasa } from "./FUCIONES.js";
 import { BudinClase } from "./BudinClase.js";
 import { MasaClase } from "./MasaClase.js";
-
+import { MASA_DE_RAVIOLES } from "../JSON/MASA_PARA_PASTAS.js";
+import { MASA_DE_PASCUALINA } from "../JSON/MASA_PARA_PASCUALINAS.js";   
 
 
 
@@ -23,12 +24,12 @@ document.addEventListener("DOMContentLoaded", () => {
     if (sector === "Masa") {
         const masa = new MasaClase();
         masa.renderMasa();
-        mostrarRecetaDeMasa(inputCantidadMasa);
+        mostrarRecetaDeMasa(inputCantidadMasa, Masa);
     }
     if (sector === "Masa de chocolate") {
         const masa = new MasaClase();
         masa.renderMasaDeChocolate();
-        mostrarRecetaDeMasa(inputCantidadMasa);
+        mostrarRecetaDeMasa(inputCantidadMasa, MasaDeChocolate);
     }
 
 
@@ -43,10 +44,15 @@ document.addEventListener("DOMContentLoaded", () => {
         budin.renderBudines();
        
     }
-    if (sector === "Rellenos para pastas") {
+    if (sector === "Masa de Ravioles") {
         const masa = new MasaClase();
         masa.renderMasaDeRavioles();
-        mostrarRecetaDeMasa(inputCantidadMasa);
+        mostrarRecetaDeMasa(inputCantidadMasa, MASA_DE_RAVIOLES);
+    }
+    if (sector === "Masa de Pascualina") {
+        const masa = new MasaClase();
+        masa.renderMasaDePascualina();
+        mostrarRecetaDeMasa(inputCantidadMasa, MASA_DE_PASCUALINA);
     }
     btnReiniciar.forEach(element => {
         element.addEventListener("click", (e) => {

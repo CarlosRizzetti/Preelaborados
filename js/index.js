@@ -17,8 +17,8 @@ btn.forEach(button => {
         if (button.id === 'Pastas') {
             contenedorMain.innerHTML =  `
             <button id="recetas-container_Rellenos para pastas"><a href="hojaDeImpresion.html?sector=Rellenos para pastas" target="_blank">Rellenos para pastas</a></button></button>
-            <button id="recetas-container_Masa_Ravioles"><a href="hojaDeImpresion.html?sector=Masa_Ravioles" target="_blank">Masa para ravioles</a></button>
-            <button id="recetas-container_Masa_Pascualina"><a href="hojaDeImpresion.html?sector=Masa_Pascualina" target="_blank">Masa para pascualina</a></button>            
+            <button id="recetas-container_Masa_Ravioles"><a href="hojaDeImpresion.html?sector=Masa de Ravioles" target="_blank">Masa para ravioles</a></button>
+            <button id="recetas-container_Masa_Pascualina"><a href="hojaDeImpresion.html?sector=Masa de Pascualina" target="_blank">Masa para pascualina</a></button>            
             `;
             header.innerHTML +=`<button id="btn-reinicio"><a href="index.html">Inicio</a></button>`;
         }
