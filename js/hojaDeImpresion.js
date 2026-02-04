@@ -43,6 +43,11 @@ document.addEventListener("DOMContentLoaded", () => {
         budin.renderBudines();
        
     }
+    if (sector === "Rellenos para pastas") {
+        const masa = new MasaClase();
+        masa.renderMasaDeRavioles();
+        mostrarRecetaDeMasa(inputCantidadMasa);
+    }
     btnReiniciar.forEach(element => {
         element.addEventListener("click", (e) => {
             e.preventDefault();
