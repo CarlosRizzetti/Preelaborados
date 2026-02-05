@@ -6,7 +6,8 @@ import { mostrarRecetaDeMasa } from "./FUCIONES.js";
 import { BudinClase } from "./BudinClase.js";
 import { MasaClase } from "./MasaClase.js";
 import { MASA_DE_RAVIOLES } from "../JSON/MASA_PARA_PASTAS.js";
-import { MASA_DE_PASCUALINA } from "../JSON/MASA_PARA_PASCUALINAS.js";   
+import { MASA_DE_PASCUALINA } from "../JSON/MASA_PARA_PASCUALINAS.js"; 
+import { RellenoDeRavioles } from "./RellenoDeRavioles.js";  
 
 
 
@@ -53,6 +54,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const masa = new MasaClase();
         masa.renderMasaDePascualina();
         mostrarRecetaDeMasa(inputCantidadMasa, MASA_DE_PASCUALINA);
+    }
+     if (sector === "Rellenos para pastas") {
+        const relleno = new RellenoDeRavioles();
+        relleno.renderRellenoDeRavioles();
     }
     btnReiniciar.forEach(element => {
         element.addEventListener("click", (e) => {

@@ -32,7 +32,7 @@ export class CuadraditosClase {
                     const recetaElegida = recetas.find(receta => receta.mercaderia === e.target.id);
                     hojaImpresionContainer.innerHTML += `  
                                         <section class="descripcion-producto-item">
-                                          <h3>RELLENO PARA CUADRADITOS DE ${e.target.id} </h3><p> ${e.target.value}Unid </p>
+                                          <h3>Relleno de cuadraditos de ${e.target.id} </h3><p> ${e.target.value}Unid </p>
                                         </section> `;
                     recetaElegida.ingredientes.forEach(ingrediente => {
                         let ing = ingrediente.cantidad;
