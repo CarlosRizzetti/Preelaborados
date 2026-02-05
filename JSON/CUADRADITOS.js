@@ -110,30 +110,15 @@ export const recetas = [
   {
     id: 10,
     mercaderia: "HAVANET",
-    ingredientes: [
-      { nombre: "Harina 0000", cantidad: 0.022 },
-      { nombre: "Huevo", cantidad: 0.005 },
-      { nombre: "Margarina", cantidad: 0.009 },
-      { nombre: "Azucar", cantidad: 0.011 },
-      { nombre: "Polvo de Hornear", cantidad: 0.002 },
-      { nombre: "Esencia Vainilla", cantidad: 0.002 },
-      { nombre: "Cacao Amargo", cantidad: 0.006 },
+    ingredientes: [      
       { nombre: "Dulce de Leche", cantidad: 0.026 },
-      { nombre: "Chocolate en Barra", cantidad: 0.004 },
-      { nombre: "Aceite de Girasol", cantidad: 0.002 }
+      { nombre: "Chocolate en Barra", cantidad: 0.004 },      
     ]
   },
   {
     id: 11,
     mercaderia: "MARROC",
-    ingredientes: [
-      { nombre: "Harina 0000", cantidad: 0.007 },
-      { nombre: "Huevo", cantidad: 0.044 },
-      { nombre: "Margarina", cantidad: 0.003 },
-      { nombre: "Azucar", cantidad: 0.002 },
-      { nombre: "Polvo de Hornear", cantidad: 0.0 },
-      { nombre: "Esencia Vainilla", cantidad: 0.0 },
-      { nombre: "Cacao Amargo", cantidad: 0.001 },
+    ingredientes: [      
       { nombre: "Pasta de Mani", cantidad: 0.012 },
       { nombre: "Chocolate en Barra", cantidad: 0.012 }
     ]
@@ -142,13 +127,6 @@ export const recetas = [
     id: 12,
     mercaderia: "HAVANET BLANCO",
     ingredientes: [
-      { nombre: "Harina 0000", cantidad: 0.007 },
-      { nombre: "Huevo", cantidad: 0.002 },
-      { nombre: "Margarina", cantidad: 0.003 },
-      { nombre: "Azucar", cantidad: 0.002 },
-      { nombre: "Polvo de Hornear", cantidad: 0.0 },
-      { nombre: "Esencia Vainilla", cantidad: 0.0 },
-      { nombre: "Cacao Amargo", cantidad: 0.001 },
       { nombre: "Dulce de Leche", cantidad: 0.024 },
       { nombre: "STRACIETELLA BLANCA", cantidad: 0.005 }
     ]
@@ -191,26 +169,14 @@ export const recetas = [
     id: 15,
     mercaderia: "FROLA DE CHOCOLATE",
     ingredientes: [
-      { nombre: "AZUCAR SUELTA", cantidad: 0.011 },
-      { nombre: "HARINA 0000", cantidad: 0.022 },
-      { nombre: "POLVO PARA HORNEAR", cantidad: 0.001 },
-      { nombre: "HUEVOS", cantidad: 0.005 },
-      { nombre: "MARGARINA", cantidad: 0.011 },
-      { nombre: "DLECHE REPOSTERO PERGAMINO", cantidad: 0.035 },
-      { nombre: "ESENCIA DE VAINILLA", cantidad: 0.0 },
-      { nombre: "COBERTURA AMARGA EN POLVO", cantidad: 0.006 }
+      { nombre: "DULCE DE LECHE REPOSTERO", cantidad: 0.035 },      
     ]
   },
   
   {
     id: 16,
     mercaderia: "CHOCOTORTA",
-    ingredientes: [
-      { nombre: "HARINA 0000", cantidad: 0.0081 },
-      { nombre: "HUEVOS", cantidad: 0.0635 },
-      { nombre: "MARGARINA", cantidad: 0.0049 },
-      { nombre: "AZUCAR SUELTA", cantidad: 0.0016 },
-      { nombre: "POLVO PARA HORNEAR", cantidad: 0.0 },
+    ingredientes: [      
       { nombre: "QUESO UNTABLE", cantidad: 0.0181 },
       { nombre: "DULCE DE LECHE REPOSTERO", cantidad: 0.0270 },
       { nombre: "GELATINA BLOOM", cantidad: 0.0003 },
