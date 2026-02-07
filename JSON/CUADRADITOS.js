@@ -1,187 +1,183 @@
 export const recetas = [ 
   {
     id: 1,
-    mercaderia: "DULCE DE LECHE",
+    mercaderia: "Dulce de Leche",
     ingredientes: [
-      { nombre: "DLECHE REPOSTERO PERGAMINO", cantidad: 0.035 },      
+      { nombre: "Dulce de leche",bruto: 0.035, limpio: 0.03, cocido: 0 },      
     ]
   },
   {
     id: 2,
-    mercaderia: "PASTA FROLA",
+    mercaderia: "Pasta frola",
     ingredientes: [      
-      { nombre: "DULCE DE MEMBRILLO", cantidad: 0.035 },     
+      { nombre: "Dulce de membrillo",bruto: 0.035, limpio: 0.03, cocido: 0  },     
     ]
   },
   {
     id: 3,
-    mercaderia: "BROWNIES",
+    mercaderia: "Brownie",
     ingredientes: [
-      { nombre: "LECHE ENTERA", cantidad: 0.009 },
-      { nombre: "CHOCOLATE EN BARRA", cantidad: 0.003 },
-      { nombre: "CHOCOLATE NESQUIK", cantidad: 0.7},
-      { nombre: "AZUCAR SUELTA", cantidad: 0.016 },
-      { nombre: "HARINA 0000", cantidad: 0.010 },
-      { nombre: "POLVO PARA HORNEAR", cantidad: 0.0 },
-      { nombre: "HUEVOS", cantidad: 0.006 },
-      { nombre: "MARGARINA", cantidad: 0.006 },
-      { nombre: "NUEZ PELADA", cantidad: 0.003 },
-      { nombre: "CAJA TORTERA (CARTON)", cantidad: 0.0 },
-      { nombre: "ACEITE DE GIRASOL", cantidad: 0.003 },
-      { nombre: "ESENCIA DE VAINILLA", cantidad: 0.001 },
-      { nombre: "SAL FINA", cantidad: 0.0 }
+      { nombre: "Leche",bruto: 0.009, limpio: 0, cocido: 0 },
+      { nombre: "Chocolate en barra",bruto: 0.003, limpio: 0, cocido: 0 },
+      { nombre: "Nesquik",bruto: 0.7, limpio: 0, cocido: 0 },
+      { nombre: "Azucar",bruto: 0.016, limpio: 0, cocido: 0 },
+      { nombre: "Harina 0000",bruto: 0.010, limpio: 0, cocido: 0 },
+      { nombre: "Polvo de hornear",bruto: 0.0, limpio: 0, cocido: 0 },
+      { nombre: "huevos",bruto: 0.006, limpio: 0, cocido: 0 },
+      { nombre: "Margarina",bruto: 0.006, limpio: 0, cocido: 0 },
+      { nombre: "Nuez pelada",bruto: 0.003, limpio: 0, cocido: 0 },      
+      { nombre: "Aceite de girasol",bruto: 0.003, limpio: 0, cocido: 0 },
+      { nombre: "Esencia de vainilla",bruto: 0.001, limpio: 0, cocido: 0 },
+      { nombre: "Sal fina",bruto: 0.0, limpio: 0, cocido: 0 }
     ]
   },
   {
     id: 4,
-    mercaderia: "BATATA",
+    mercaderia: "batata",
     ingredientes: [     
-      { nombre: "DULCE DE BATATA", cantidad: 0.035 },      
+      { nombre: "Dulce de batata",bruto: 0.035, limpio: 0.03, cocido: 0 },      
     ]
   },
   {
     id: 5,
-    mercaderia: "RICOTA Y D.LECHE",
+    mercaderia: "Ricota y dulce de leche",
     ingredientes: [
-      { nombre: "RICOTTA", cantidad: 0.026 },
-      { nombre: "AZUCAR SUELTA", cantidad: 0.015 },     
-      { nombre: "DLECHE REPOSTERO PERGAMINO", cantidad: 0.026 },     
-      { nombre: "ESENCIA DE VAINILLA", cantidad: 0.001 }
+      { nombre: "Ricota",bruto: 0.4519, limpio: 0.03, cocido: 0 },
+      { nombre: "Azucar",bruto: 0.1094, limpio: 0, cocido: 0 },     
+      { nombre: "Dulce de leche",bruto: 0.0078, limpio: 0.0, cocido: 0 },
+      { nombre: "Crema de leche",bruto: 0.4535, limpio: 0.02, cocido: 0 },     
+      { nombre: "Esencia de vainilla",bruto: 0.0039, limpio: 0, cocido: 0 }
     ]
   },
   {
     id: 6,
-    mercaderia: "PIE MANZANA CON TAPA",
+    mercaderia: "Pie de manzana",
     ingredientes: [
-      { nombre: "OPORTO", cantidad: 0.001 },
-      { nombre: "MANZANA DESHIDRATADA", cantidad: 0.007 },
-      { nombre: "AZUCAR SUELTA", cantidad: 0.017 },
-      { nombre: "ESENCIA DE VAINILLA", cantidad: 0.0 },
-      { nombre: "HARINA 0000", cantidad: 0.018 },
-      { nombre: "POLVO PARA HORNEAR", cantidad: 0.001 },
-      { nombre: "HUEVOS", cantidad: 0.004 },
-      { nombre: "MARGARINA", cantidad: 0.009 },
-      { nombre: "NUEZ PELADA", cantidad: 0.001 },
-      { nombre: "PASAS DE UVA RUBIA", cantidad: 0.001 },
-      { nombre: "JUGO TANG SABOR MANZANA", cantidad: 0.0 },
-      { nombre: "GELATINA SIN SABOR", cantidad: 0.001 },
-      { nombre: "MAICENA", cantidad: 0.001 }
+      { nombre: "Oporto",bruto: 0.001, limpio: 0, cocido: 0 },
+      { nombre: "Manzana deshidratada",bruto: 0.007, limpio: 0, cocido: 0 },
+      { nombre: "Azucar",bruto: 0.017, limpio: 0, cocido: 0 },
+      { nombre: "Esencia de vainilla",bruto: 0.0, limpio: 0, cocido: 0 },
+      { nombre: "Harina 0000",bruto: 0.018, limpio: 0, cocido: 0 },
+      { nombre: "Polvo para hornear",bruto: 0.001, limpio: 0, cocido: 0 },
+      { nombre: "Huevos",bruto: 0.004, limpio: 0, cocido: 0 },
+      { nombre: "Margarina",bruto: 0.009, limpio: 0, cocido: 0 },
+      { nombre: "Nuez pelada",bruto: 0.001, limpio: 0, cocido: 0 },
+      { nombre: "Pasas de uva rubias",bruto: 0.001, limpio: 0, cocido: 0 },
+      { nombre: "Jugo de manzana",bruto: 0.0, limpio: 0, cocido: 0 },
+      { nombre: "Gelatina sin sabor",bruto: 0.001, limpio: 0, cocido: 0 },
+      { nombre: "Maicena",bruto: 0.001, limpio: 0, cocido: 0 }
     ]
   },
   {
     id: 7,
-    mercaderia: "MANZANA",
+    mercaderia: "Manzana",
     ingredientes: [
-      { nombre: "LECHE ENTERA", cantidad: 0.0045 },
-      { nombre: "CREMA DE LECHE AL 39 %", cantidad: 0.0078},
-      { nombre: "AZUCAR SUELTA", cantidad: 0.011 },
-      { nombre: "HARINA 0000", cantidad: 0.016 },
-      { nombre: "POLVO PARA HORNEAR", cantidad: 0.0004 },
-      { nombre: "HUEVOS", cantidad: 0.0033 },
-      { nombre: "MANZANA VERDE", cantidad: 0.023 },
-      { nombre: "MARGARINA", cantidad: 0.0081 },
-      { nombre: "CREMA DE LECHE POTE FAMILIAR", cantidad: 0.007 },
-      { nombre: "MAICENA", cantidad: 0.0032 },
-      { nombre: "ESENCIA DE VAINILLA", cantidad: 4.0 }
+      { nombre: "Leche entera",bruto: 0.0045, limpio: 0, cocido: 0 },
+      { nombre: "Crema de leche al 39 %",bruto: 0.0078, limpio: 0, cocido: 0},
+      { nombre: "Azucar",bruto: 0.011, limpio: 0, cocido: 0 },
+      { nombre: "Harina 0000",bruto: 0.016, limpio: 0, cocido: 0 },
+      { nombre: "Polvo para hornear",bruto: 0.0004, limpio: 0, cocido: 0 },
+      { nombre: "Huevos",bruto: 0.0033, limpio: 0, cocido: 0 },
+      { nombre: "Manzana verde",bruto: 0.023, limpio: 0, cocido: 0 },
+      { nombre: "Margarina",bruto: 0.0081, limpio: 0, cocido: 0 },
+      { nombre: "Crema de leche pote familiar",bruto: 0.007, limpio: 0, cocido: 0 },
+      { nombre: "Maicena",bruto: 0.0032, limpio: 0, cocido: 0 },
+      { nombre: "Esencia de vainilla",bruto: 4.0e-05, limpio: 0, cocido: 0 }
     ]
   },
   {
     id: 8,
-    mercaderia: "RICOTTA",
+    mercaderia: "Ricota",
     ingredientes: [
-      { nombre: "RICOTTA", cantidad: 0.046485261 },
-      { nombre: "AZUCAR SUELTA", cantidad: 0.011256236 },
-      { nombre: "HARINA 0000", cantidad: 0.018450921 },
-      { nombre: "HUEVOS", cantidad: 0.003763988 },
-      { nombre: "MARGARINA", cantidad: 0.00922546 },
-      { nombre: "CREMA DE LECHE", cantidad: 0.000798186 },
-      { nombre: "POLVO PARA HORNEAR", cantidad: 0.000553528 },
-      { nombre: "ESENCIA DE VAINILLA", cantidad: 4.53697e-05 }
+      { nombre: "Ricota",bruto: 0.813, limpio: 0.03, cocido: 0 },
+      { nombre: "Azucar",bruto: 0.197, limpio: 0, cocido: 0 },     
+      { nombre: "Crema de leche",bruto: 0.014, limpio: 0.0, cocido: 0 },     
+      { nombre: "Esencia de vainilla",bruto: 0.007, limpio: 0, cocido: 0 }
     ]
   },
   {
     id: 9,
-    mercaderia: "DDL Y COCO",
+    mercaderia: "Dulce de Leche y Coco",
     ingredientes: [      
-      { nombre: "DLECHE REPOSTERO PERGAMINO", cantidad: 0.035 },      
-      { nombre: "COCO RALLADO", cantidad: 0.00262 }
+      { nombre: "Dulce de leche repostero",bruto: 0.035, limpio: 0, cocido: 0 },      
+      { nombre: "Coco rallado",bruto: 0.00262, limpio: 0, cocido: 0 }
     ]
   },
   {
     id: 10,
-    mercaderia: "HAVANET",
+    mercaderia: "Havanet Chocolate",
     ingredientes: [      
-      { nombre: "Dulce de Leche", cantidad: 0.026 },
-      { nombre: "Chocolate en Barra", cantidad: 0.004 },      
+      { nombre: "Dulce de Leche",bruto: 0.026, limpio: 0, cocido: 0 },
+      { nombre: "Chocolate en Barra",bruto: 0.004, limpio: 0, cocido: 0 },      
     ]
   },
   {
     id: 11,
-    mercaderia: "MARROC",
+    mercaderia: "Marroc",
     ingredientes: [      
-      { nombre: "Pasta de Mani", cantidad: 0.012 },
-      { nombre: "Chocolate en Barra", cantidad: 0.012 }
+      { nombre: "Pasta de Mani",bruto: 0.012, limpio: 0, cocido: 0 },
+      { nombre: "Chocolate en Barra",bruto: 0.012, limpio: 0, cocido: 0 }
     ]
   },
   {
     id: 12,
-    mercaderia: "HAVANET BLANCO",
+    mercaderia: "Havanet blanco",
     ingredientes: [
-      { nombre: "Dulce de Leche", cantidad: 0.024 },
-      { nombre: "STRACIETELLA BLANCA", cantidad: 0.005 }
+      { nombre: "Dulce de Leche",bruto: 0.024, limpio: 0, cocido: 0 },
+      { nombre: "Stracietella Blanca",bruto: 0.005, limpio: 0, cocido: 0 }
     ]
   },
  
   
   {
     id: 13,
-    mercaderia: "RICOTA Y F/ROJOS",
+    mercaderia: "Ricota y frutos rojos",
     ingredientes: [
-      { nombre: "RICOTTA", cantidad: 0.026 },
-      { nombre: "AZUCAR SUELTA", cantidad: 0.015 },
-      { nombre: "HARINA 0000", cantidad: 0.018 },
-      { nombre: "POLVO PARA HORNEAR", cantidad: 0.001 },
-      { nombre: "HUEVOS", cantidad: 0.004 },
-      { nombre: "MARGARINA", cantidad: 0.009 },
-      { nombre: "MIX DE FRUTOS ROJOS CONGELADOS", cantidad: 0.026 },
-      { nombre: "CREMA DE LECHE POTE FAMILIAR", cantidad: 0.0 },
-      { nombre: "ESENCIA DE VAINILLA", cantidad: 0.0 }
+      { nombre: "Ricota",bruto: 0.026, limpio: 0, cocido: 0 },
+      { nombre: "Azucar",bruto: 0.015, limpio: 0, cocido: 0 },
+      { nombre: "Harina 0000",bruto: 0.018, limpio: 0, cocido: 0 },
+      { nombre: "Polvo para hornear",bruto: 0.001, limpio: 0, cocido: 0 },
+      { nombre: "Huevos",bruto: 0.004, limpio: 0, cocido: 0 },
+      { nombre: "Margarina",bruto: 0.009, limpio: 0, cocido: 0 },
+      { nombre: "Mix de frutos rojos congelados",bruto: 0.026, limpio: 0, cocido: 0 },
+      { nombre: "Crema de leche",bruto: 0.0, limpio: 0, cocido: 0 },
+      { nombre: "Esencia de vainilla",bruto: 0.0, limpio: 0, cocido: 0 }
     ]
   },
   {
     id: 14,
-    mercaderia: "CARROT CAKE",
+    mercaderia: "Carrot cake",
     ingredientes: [
-      { nombre: "Huevo (KG)", cantidad: 0.007 },
-      { nombre: "Azucar", cantidad: 0.011 },
-      { nombre: "Miel", cantidad: 0.006 },
-      { nombre: "Aceite de girasol", cantidad: 0.008 },
-      { nombre: "Harina 0000", cantidad: 0.013 },
-      { nombre: "Polvo para hornear", cantidad: 0.001 },
-      { nombre: "Nueces", cantidad: 0.002 },
-      { nombre: "Canela molida", cantidad: 0.0 },
-      { nombre: "Nuez moscada", cantidad: 0.0 },
-      { nombre: "Sal fina", cantidad: 0.0 },
-      { nombre: "Zanahoria Rallada", cantidad: 0.019 }
+      { nombre: "Huevo (KG)",bruto: 0.007, limpio: 0, cocido: 0 },
+      { nombre: "Azucar",bruto: 0.011, limpio: 0, cocido: 0 },
+      { nombre: "Miel",bruto: 0.006, limpio: 0, cocido: 0 },
+      { nombre: "Aceite de girasol",bruto: 0.008, limpio: 0, cocido: 0 },
+      { nombre: "Harina 0000",bruto: 0.013, limpio: 0, cocido: 0 },
+      { nombre: "Polvo para hornear",bruto: 0.001, limpio: 0, cocido: 0 },
+      { nombre: "Nueces",bruto: 0.002, limpio: 0, cocido: 0 },
+      { nombre: "Canela molida",bruto: 0.0, limpio: 0, cocido: 0 },
+      { nombre: "Nuez moscada",bruto: 0.0, limpio: 0, cocido: 0 },
+      { nombre: "Sal fina",bruto: 0.0, limpio: 0, cocido: 0 },
+      { nombre: "Zanahoria Rallada",bruto: 0.019, limpio: 0, cocido: 0 }
     ]
   },
   {
     id: 15,
-    mercaderia: "FROLA DE CHOCOLATE",
+    mercaderia: "Frola de Chocolate",
     ingredientes: [
-      { nombre: "DULCE DE LECHE REPOSTERO", cantidad: 0.035 },      
+      { nombre: "Dulce de leche repostero",bruto: 0.035, limpio: 0, cocido: 0 },      
     ]
   },
   
   {
     id: 16,
-    mercaderia: "CHOCOTORTA",
+    mercaderia: "Chocotorta",
     ingredientes: [      
-      { nombre: "QUESO UNTABLE", cantidad: 0.0181 },
-      { nombre: "DULCE DE LECHE REPOSTERO", cantidad: 0.0270 },
-      { nombre: "GELATINA BLOOM", cantidad: 0.0003 },
-      { nombre: "CACAO AMARGO", cantidad: 0.0013 },
-      { nombre: "MICROGALLETITAS", cantidad: 0.0032 }
+      { nombre: "Queso untable",bruto: 0.0181, limpio: 0, cocido: 0 },
+      { nombre: "Dulce de leche repostero",bruto: 0.0270, limpio: 0, cocido: 0 },
+      { nombre: "Gelatina bloom",bruto: 0.0003, limpio: 0, cocido: 0 },
+      { nombre: "Cacao amargo",bruto: 0.0013, limpio: 0, cocido: 0 },
+      { nombre: "Microgalletitas",bruto: 0.0032, limpio: 0, cocido: 0 }
     ]
   }
 ]
