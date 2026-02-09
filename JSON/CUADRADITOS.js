@@ -148,17 +148,17 @@ export const recetas = [
     id: 14,
     mercaderia: "Carrot cake",
     ingredientes: [
-      { nombre: "Huevo (KG)",bruto: 0.007, limpio: 0, cocido: 0 },
-      { nombre: "Azucar",bruto: 0.011, limpio: 0, cocido: 0 },
-      { nombre: "Miel",bruto: 0.006, limpio: 0, cocido: 0 },
-      { nombre: "Aceite de girasol",bruto: 0.008, limpio: 0, cocido: 0 },
-      { nombre: "Harina 0000",bruto: 0.013, limpio: 0, cocido: 0 },
-      { nombre: "Polvo para hornear",bruto: 0.001, limpio: 0, cocido: 0 },
-      { nombre: "Nueces",bruto: 0.002, limpio: 0, cocido: 0 },
-      { nombre: "Canela molida",bruto: 0.0, limpio: 0, cocido: 0 },
-      { nombre: "Nuez moscada",bruto: 0.0, limpio: 0, cocido: 0 },
-      { nombre: "Sal fina",bruto: 0.0, limpio: 0, cocido: 0 },
-      { nombre: "Zanahoria Rallada",bruto: 0.019, limpio: 0, cocido: 0 }
+      { nombre: "Huevo (KG)",bruto: 0.00699, limpio: 0, cocido: 0 },
+      { nombre: "Azucar",bruto: 0.01096, limpio: 0, cocido: 0 },
+      { nombre: "Miel",bruto: 0.00634, limpio: 0, cocido: 0 },
+      { nombre: "Aceite de girasol",bruto: 0.00762, limpio: 0, cocido: 0 },
+      { nombre: "Harina 0000",bruto: 0.01270, limpio: 0, cocido: 0 },
+      { nombre: "Polvo para hornear",bruto: 0.00127, limpio: 0, cocido: 0 },
+      { nombre: "Nueces",bruto: 0.00238, limpio: 0, cocido: 0 },
+      { nombre: "Canela molida",bruto: 0.00008, limpio: 0, cocido: 0 },
+      { nombre: "Nuez moscada",bruto: 0.00002, limpio: 0, cocido: 0 },
+      { nombre: "Sal fina",bruto: 0.00005, limpio: 0, cocido: 0 },
+      { nombre: "Zanahoria Rallada",bruto: 0.02165, limpio: 0.12, cocido: 0 }
     ]
   },
   {

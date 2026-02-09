@@ -30,19 +30,22 @@ export class CuadraditosClase {
                 } if (e.target.value > 0) {
                     const cantidad = e.target.value;
                     const recetaElegida = recetas.find(receta => receta.mercaderia === e.target.id);
+                    const crumble = recetaElegida.crumble;
                     hojaImpresionContainer.innerHTML += `  
                                         <section class="descripcion-producto-item">
-                                          <h3>Relleno de cuadraditos de ${e.target.id} </h3><p> ${e.target.value}Unid </p>
+                                          <h3>Relleno de cuadraditos de ${e.target.id} </h3><p>Bruto</p><p>Limpio</p><p>Cocido</p>
                                         </section> `;
                     recetaElegida.ingredientes.forEach(ingrediente => {
-                        let ing = ingrediente.cantidad;
-                        let total = Number(ing) * Number(cantidad);
-                        hojaImpresionContainer.innerHTML += `  
-                                                               
-                                        <section class="receta-item">
-                                           <label>${ingrediente.nombre}</label> 
-                                           <p>${total.toFixed(2)}</p>
-                                         </section>                
+                        let bruto = ingrediente.bruto;
+                        let limpio = ingrediente.limpio;
+                        let cocido = ingrediente.cocido;
+                        let total = Number(bruto) * Number(cantidad);
+                        hojaImpresionContainer.innerHTML += ` <section class="receta-item">
+                                                   <label>${ingrediente.nombre}</label> 
+                                                   <p>${total.toFixed(2)}</p>
+                                                    <p>${(total - (total * ingrediente.limpio)).toFixed(2)}</p>
+                                                    <p>${(total * ingrediente.cocido).toFixed(2)}</p>
+                                                 </section>                
                                            `;
                     });
                 }
