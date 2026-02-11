@@ -17,7 +17,7 @@ export const recetas = [
     id: 3,
     mercaderia: "Brownie",
     ingredientes: [
-      { nombre: "Leche",bruto: 0.009, limpio: 0, cocido: 0 },
+      { nombre: "Leche",bruto: 0.0047301, limpio: 0, cocido: 0 },
       { nombre: "Chocolate en barra",bruto: 0.003, limpio: 0, cocido: 0 },
       { nombre: "Nesquik",bruto: 0.7, limpio: 0, cocido: 0 },
       { nombre: "Azucar",bruto: 0.016, limpio: 0, cocido: 0 },

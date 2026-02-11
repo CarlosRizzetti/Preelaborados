@@ -35,7 +35,7 @@ export class CuadraditosClase {
                                           <h3>Relleno de cuadraditos de ${e.target.id} </h3><p> ${e.target.value}Unid </p>
                                         </section> `;
                     recetaElegida.ingredientes.forEach(ingrediente => {
-                        let ing = ingrediente.cantidad;
+                        let ing = ingrediente.bruto;
                         let total = Number(ing) * Number(cantidad);
                         hojaImpresionContainer.innerHTML += `  
                                                                
