@@ -58,7 +58,7 @@ export const recetas = [
       { nombre: "Oporto",bruto: 0.00098, limpio: 0, cocido: 0 },
       { nombre: "Esencia de vainilla",bruto: 0.0001633, limpio: 0, cocido: 0 },
 
-      { nombre: "Maicena",bruto: 0.0004050, limpio: 0, cocido: 0 }
+      { nombre: "Maicena",bruto: 0.0004050, limpio: 0, cocido: 0 },
       { nombre: "Agua",bruto: 0.001084, limpio: 0, cocido: 0 },
       
       { nombre: "Azucar",bruto: 0.01667, limpio: 0, cocido: 0 },
