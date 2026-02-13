@@ -42,7 +42,7 @@ export const recetas = [
     
     Mercaderia: "batata",
     Ingredientes: [     
-      { nombre: "Dulce de batata",bruto: 0.035, limpio: 0.03, cocido: 0 },      
+     { nombre: "Dulce de batata",bruto: 0.035, limpio: 0.03, cocido: 0 },      
     ]
   },
   {

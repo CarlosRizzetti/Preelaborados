@@ -35,7 +35,7 @@ export class CuadraditosClase {
                     const procedimiento = recetaElegida.Procedimiento
                     hojaImpresionContainer.innerHTML += `  
                                         <section class="descripcion-producto-item">
-                                          <h3>Relleno de cuadraditos de ${e.target.id} </h3><p>Bruto</p><p>Limpio</p><p>Cocido</p>
+                                          <h3>Relleno de cuadraditos de ${e.target.id} </h3><h2>Bruto</h2><h2>Limpio</h2><h2>Cocido</h2>
                                         </section> `;
                     recetaElegida.Ingredientes.forEach(ingrediente => {
                         let bruto = ingrediente.bruto;
@@ -53,7 +53,7 @@ export class CuadraditosClase {
                     if(crumble){
                         hojaImpresionContainer.innerHTML += `  
                                         <section class="descripcion-producto-item">
-                                          <h3>Crumble de cuadraditos de ${e.target.id} </h3><p>Bruto</p><p>Limpio</p><p>Cocido</p>
+                                          <h3>Crumble de cuadraditos de ${e.target.id} </h3><h2>Bruto</h2><h2>Limpio</h2><h2>Cocido</h2>
                                         </section> `;
                         crumble.forEach(ingrediente => {
                             let bruto = ingrediente.bruto;
@@ -72,7 +72,7 @@ export class CuadraditosClase {
                     if(pastelera){
                         hojaImpresionContainer.innerHTML += `  
                                         <section class="descripcion-producto-item">
-                                          <h3>Pastelera de cuadraditos de ${e.target.id} </h3><p>Bruto</p><p>Limpio</p><p>Cocido</p>
+                                          <h3>Pastelera de cuadraditos de ${e.target.id} </h3><h2>Bruto</h2><h2>Limpio</h2><h2>Cocido</h2>
                                         </section> `;
                         pastelera.forEach(ingrediente => {
                             let bruto = ingrediente.bruto;
@@ -104,4 +104,5 @@ export class CuadraditosClase {
             });
         });
     }
-}    
+} 
+ 
