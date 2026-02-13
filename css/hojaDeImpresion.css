@@ -20,6 +20,7 @@ header {
     border: 1px solid #050505;
     margin-bottom: 1%;
     color: antiquewhite;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -38,6 +39,7 @@ main {
     align-items: center;    
     text-align: center;   
 }
+
 #lista-recetas {
     width: 100%;
     height: auto;
@@ -51,12 +53,19 @@ main {
     border-radius: 5px;
 }
 
-p {
+p,h2 {
     width: 30%;
-    height: 100%;
-    font-size: 0.8em;
+    height: 100%;    
     border: 1px solid #000;
     text-align: center;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(69, 133, 6);
+    color: #fff;
+    font-family: 'Lora', serif;
 }
 
 #titulo-receta {
@@ -87,10 +96,12 @@ p {
     margin: 0; 
     border: 1px solid #000;
     background-color: #e0e0e0;   
-    font-size: 0.5em;
+    font-size: 0.9em;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 label,h3 {
@@ -98,7 +109,15 @@ label,h3 {
     height: 100%;
     border: 1px solid #000;
     align-items: start;
-    font-size: 0.8em;
+    font-size: 1em;
+    font-family: 'Lora', serif;
+}
+h3 {
+    background-color: rgb(69, 133, 6);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 input {
