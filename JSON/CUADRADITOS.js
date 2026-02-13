@@ -28,6 +28,14 @@ export const recetas = [
       { nombre: "Aceite de girasol",bruto: 0.003, limpio: 0, cocido: 0 },
       { nombre: "Esencia de vainilla",bruto: 0.001, limpio: 0, cocido: 0 },
       { nombre: "Sal fina",bruto: 0.0, limpio: 0, cocido: 0 }
+    ],
+    Procedimiento: [
+      { nombre: "Derretir el chocolate, la margarina y el aceite a baño maría." },
+      { nombre: "Mezclar harina, sal y polvo de hornear hasta que estén bien integrados." },
+      { nombre: "En otro recipiente, batir los huevos con el azúcar hasta lograr el punto bizcochuelo." },
+      { nombre: "Agregar la mitad de la leche a la mezcla tibia." },
+      { nombre: "Incorporar la mezcla de polvos y luego la otra mitad de la leche." },
+      { nombre: "Finalmente agregar las nueces peladas y batir hasta que esté bien integrada." },
     ]
   },
   {
@@ -49,28 +57,27 @@ export const recetas = [
       },
   {
     Mercaderia: "Pie de manzana",
-    Ingredientes: [
+    Hidratacion: [
       { nombre: "Manzana deshidratada",bruto: 0.006762, limpio: 0, cocido: 0 },
       { nombre: "Agua",bruto: 0.01986, limpio: 0, cocido: 0 },
-
+    ],
+    Jugo: [
       { nombre: "Jugo de manzana",bruto: 0.0002286, limpio: 0, cocido: 0 },
       { nombre: "Agua",bruto: 0.0049, limpio: 0, cocido: 0 },
       { nombre: "Oporto",bruto: 0.00098, limpio: 0, cocido: 0 },
       { nombre: "Esencia de vainilla",bruto: 0.0001633, limpio: 0, cocido: 0 },
-
-      { nombre: "Maicena",bruto: 0.0004050, limpio: 0, cocido: 0 }
+    ],
+    Maicena: [
+      { nombre: "Maicena",bruto: 0.0004050, limpio: 0, cocido: 0 },
       { nombre: "Agua",bruto: 0.001084, limpio: 0, cocido: 0 },
-      
+    ],
+    Unificar: [
       { nombre: "Azucar",bruto: 0.01667, limpio: 0, cocido: 0 },
       { nombre: "Agua",bruto: 0.007, limpio: 0, cocido: 0 },
       { nombre: "Gelatina 250 Bloom",bruto: 0.001, limpio: 0, cocido: 0 },
       { nombre: "Pasas de uva rubias",bruto: 0.001006, limpio: 0, cocido: 0 },
       { nombre: "Sorbato",bruto: 0.0196, limpio: 0, cocido: 0 },      
       { nombre: "Nuez pelada",bruto: 0.001017, limpio: 0, cocido: 0 },
-      
-      
-     
-      
     ]
   },
   {

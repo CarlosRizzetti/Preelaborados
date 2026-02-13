@@ -32,6 +32,7 @@ export class CuadraditosClase {
                     const recetaElegida = recetas.find(receta => receta.Mercaderia === e.target.id);
                     const crumble = recetaElegida.Crumble
                     const pastelera = recetaElegida.Pastelera
+                    const procedimiento = recetaElegida.Procedimiento
                     hojaImpresionContainer.innerHTML += `  
                                         <section class="descripcion-producto-item">
                                           <h3>Relleno de cuadraditos de ${e.target.id} </h3><p>Bruto</p><p>Limpio</p><p>Cocido</p>
@@ -83,6 +84,18 @@ export class CuadraditosClase {
                                                        <p>${total.toFixed(2)}</p>
                                                         <p>${(total - (total * ingrediente.limpio)).toFixed(2)}</p>
                                                         <p>${(total * ingrediente.cocido).toFixed(2)}</p>
+                                                     </section>                
+                                               `;
+                        });
+                    }
+                    if(procedimiento){
+                        hojaImpresionContainer.innerHTML += `  
+                                        <section class="descripcion-producto-item">
+                                          <h3>Procedimiento de cuadraditos de ${e.target.id} </h3>
+                                        </section> `;
+                        procedimiento.forEach(paso => {
+                            hojaImpresionContainer.innerHTML += ` <section class="procedimiento-item">
+                                                       <label>${paso.nombre}</label> 
                                                      </section>                
                                                `;
                         });
