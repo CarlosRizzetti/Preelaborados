@@ -91,11 +91,12 @@ export class CuadraditosClase {
                     if(procedimiento){
                         hojaImpresionContainer.innerHTML += `  
                                         <section class="descripcion-producto-item">
-                                          <h3>Procedimiento de cuadraditos de ${e.target.id} </h3>
+                                          <h3 class="titulo-procedimiento">Procedimiento de cuadraditos de ${e.target.id} </h3>
                                         </section> `;
                         procedimiento.forEach(paso => {
                             hojaImpresionContainer.innerHTML += ` <section class="procedimiento-item">
-                                                       <label>${paso.nombre}</label> 
+                                                         <h4>${paso.nombre}</h4>
+                                                       
                                                      </section>                
                                                `;
                         });

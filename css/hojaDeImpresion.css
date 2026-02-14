@@ -103,6 +103,39 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
+.titulo-procedimiento{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    border-radius: 5px;    
+    text-align: center;
+    font-size: 1.5em;
+    background-color: rgb(69, 133, 6);
+    color: #fff;
+    font-family: 'Lora', serif;
+}
+.procedimiento-item {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start ;
+    align-items: center;    
+    text-align: center;
+    border-radius: 5px;
+}
+h4 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start ;
+    align-items: center;    
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Lora', serif;
+    
+}
 
 label,h3 {
     width: 70%;

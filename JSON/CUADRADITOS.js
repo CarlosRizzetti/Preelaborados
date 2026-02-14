@@ -30,12 +30,12 @@ export const recetas = [
       { nombre: "Sal fina",bruto: 0.0, limpio: 0, cocido: 0 }
     ],
     Procedimiento: [
-      { nombre: "Derretir el chocolate, la margarina y el aceite a baño maría." },
-      { nombre: "Mezclar harina, sal y polvo de hornear hasta que estén bien integrados." },
-      { nombre: "En otro recipiente, batir los huevos con el azúcar hasta lograr el punto bizcochuelo." },
-      { nombre: "Agregar la mitad de la leche a la mezcla tibia." },
-      { nombre: "Incorporar la mezcla de polvos y luego la otra mitad de la leche." },
-      { nombre: "Finalmente agregar las nueces peladas y batir hasta que esté bien integrada." },
+      { nombre: "1) Derretir el chocolate, la margarina y el aceite a baño maría." },
+      { nombre: "2)Mezclar harina, sal y polvo de hornear hasta que estén bien integrados." },
+      { nombre: "3)En otro recipiente, batir los huevos con el azúcar hasta lograr el punto bizcochuelo." },
+      { nombre: "4)Agregar la mitad de la leche a la mezcla tibia." },
+      { nombre: "5)Incorporar la mezcla de polvos y luego la otra mitad de la leche." },
+      { nombre: "6)Finalmente agregar las nueces peladas y batir hasta que esté bien integrada." },
     ]
   },
   {
