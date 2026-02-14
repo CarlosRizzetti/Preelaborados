@@ -22,5 +22,14 @@ btn.forEach(button => {
             `;
             header.innerHTML +=`<button id="btn-reinicio"><a href="index.html">Inicio</a></button>`;
         }
+        if (button.id === 'Flanes') {
+            contenedorMain.innerHTML =  `
+            <button id="recetas-container_Flanes"><a href="hojaDeImpresion.html?sector=Flanes" target="_blank">Flanes</a></button>
+            <button id="recetas-container_Gelatinas"><a href="hojaDeImpresion.html?sector=Gelatinas" target="_blank">Gelatinas</a></button>
+            <button id="recetas-container_Postres"><a href="hojaDeImpresion.html?sector=Postres" target="_blank">Postres</a></button>
+            <button id="recetas-container_Cremosos"><a href="hojaDeImpresion.html?sector=Cremosos" target="_blank">Cremosos</a></button>   
+            `;
+            header.innerHTML +=`<button id="btn-reinicio"><a href="index.html">Inicio</a></button>`;
+        }
     });
 });
