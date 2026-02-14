@@ -8,7 +8,10 @@ import { MasaClase } from "./MasaClase.js";
 import { MASA_DE_RAVIOLES } from "../JSON/MASA_PARA_PASTAS.js";
 import { MASA_DE_PASCUALINA } from "../JSON/MASA_PARA_PASCUALINAS.js"; 
 import { RellenoDeRavioles } from "./RellenoDeRavioles.js";  
-
+import { gelatinas } from "../JSON/GELATINAS.js";
+import { postres } from "../JSON/POSTRES.js";
+import { Flanes } from "./ClaseFlanes.js";
+import { flanesReceta } from "../JSON/FLANES.js";
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -58,6 +61,18 @@ document.addEventListener("DOMContentLoaded", () => {
      if (sector === "Rellenos para pastas") {
         const relleno = new RellenoDeRavioles();
         relleno.renderRellenoDeRavioles();
+    }
+    if (sector === "Flanes") {
+        const flan = new Flanes();
+        flan.renderFlanes(flanesReceta);
+    }
+    if (sector === "Gelatinas") {
+        const gelatina = new Flanes();
+        gelatina.renderFlanes(gelatinas);
+    }
+    if (sector === "Postres") {
+        const postre = new Flanes();
+        postre.renderFlanes(postres);
     }
     btnReiniciar.forEach(element => {
         element.addEventListener("click", (e) => {
