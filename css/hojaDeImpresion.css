@@ -279,3 +279,15 @@ a{
         padding: 0;
     }
 }
+@media screen and (max-width: 768px) {
+   
+    *{
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 320px) {
+   
+    *{
+        font-size: 0.5em;
+    }
+}
