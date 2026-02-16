@@ -25,6 +25,10 @@ export class Flanes {
                     hojaImpresionContainer.innerHTML = '';
                     return;
                 } if (e.target.value > 0) {
+                    hojaImpresionContainer.innerHTML += `
+                                  <section class="descripcion-producto-item_cantidad">
+                                    <label>Cantidad de lotes </label><p> ${e.target.value} Lote</p>
+                                  </section>`;
                     const cantidad = e.target.value;
                     const recetaElegida = postres.find(flan => flan.nombre === e.target.id);
                     hojaImpresionContainer.innerHTML += `  

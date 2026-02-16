@@ -37,7 +37,8 @@ main {
     flex-direction: column;
     justify-content: start;
     align-items: center;    
-    text-align: center;   
+    text-align: center; 
+    background-color: white;  
 }
 
 #lista-recetas {
@@ -58,6 +59,7 @@ p,h2 {
     height: 100%;    
     border: 1px solid #000;
     text-align: center;
+    
 }
 h2 {
     display: flex;
@@ -92,7 +94,7 @@ h2 {
 }
 .btn-receta-item{
     width: 100%;
-    height: 7vh;  
+    height: 9vh;  
     margin: 0; 
     border: 1px solid #000;
     background-color: #e0e0e0;   
@@ -151,6 +153,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 0.8em;
 }
 
 input {
@@ -244,18 +247,31 @@ a{
     justify-content: center;
     align-items: center;
     border: 1px solid #000;
-    margin-top: 1.5%;
+    margin-top:0;
     font-size: 1em;
     color: #000;    
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .titulo-crumble, .titulo-agregados, .titulo-mermelada {
-    width: 100%;
+    width: 70%;
     height: auto;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
-    margin-bottom: 0.5em;
-    text-decoration: underline;
+    
+}
+.descripcion-producto-item_cantidad{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    margin-top: 1.5%;
+    margin-bottom: 0;
+    font-size: 1em;
+    color: #000000;    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: yellow;
 }
 
 @media print {
