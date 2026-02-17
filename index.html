@@ -1,44 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas | Sabores Caseros</title>
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 
 <body>
-    <header>
-        <h1>Recetas</h1>
+
+    <header class="header">
+        <h1>🍽 Recetas</h1>
+        <p>Elegí una categoría y empezá a cocinar</p>
     </header>
-    <main>
-        <section id="contenedor-main">
-            <section class="contenedor-main_Pasteleria">
-                <button id="Pasteleria">Pasteleria</button>
-                <div class="imagen-Pasteleria"></div>
-            </section>
-            <section class="contenedor-main_Pastas">
-                <button id="Pastas">Pastas</button>
-                <div class="imagen-Pastas"></div>
-            </section>
-            <section class="contenedor-main_Sandwicheria">
-                <button id="Sandwicheria">Sandwicheria</button>
-                <div class="imagen-Sandwicheria"></div>
-            </section>
-            <section class="contenedor-main_Flanes">
-                <button id="Flanes">Flanes</button>
-                <div class="imagen-Flanes"></div>
-            </section>
-            
+
+    <main class="main">
+
+        <section id="contenedor-main" class="grid-categorias">
+
+            <article class="card">
+                <button class="btn-categoria" id="Pasteleria">Pastelería</button>
+                <div class="imagen imagen-pasteleria"></div>
+            </article>
+
+            <article class="card">
+                <button class="btn-categoria" id="Pastas">Pastas</button>
+                <div class="imagen imagen-pastas"></div>
+            </article>
+
+            <article class="card">
+                <button class="btn-categoria" id="Sandwicheria">Sandwichería</button>
+                <div class="imagen imagen-sandwicheria"></div>
+            </article>
+
+            <article class="card">
+                <button class="btn-categoria" id="Flanes">Flanes & Postres</button>
+                <div class="imagen imagen-flanes"></div>
+            </article>
+
         </section>
+
     </main>
-    <footer>
+
+    <footer class="footer">
+        <p>© 2026 Recetas - FoodService s.a</p>
     </footer>
-    
-<script type="module" src="./js/index.js"></script>
 
-
+    <script type="module" src="./js/index.js"></script>
 </body>
 
 </html>

@@ -1,127 +1,107 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    width: 100%;
-    min-height: 100vh;
-}
-header{
-    width: 100%;
-    height: 25vh;
-    font-size: 3em;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #f8f8f8;
-    border-bottom: 1px solid #ddd;   
-    background-color: #0d81e0;
-    border: 1px solid #050505;
-    margin-bottom: 1%;
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #fdfbfb, #ebedee);
+    color: #333;
 }
 
-main{
-    width: 90%;
-    height: 80vh;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-section#contenedor-main{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
+/* HEADER */
+
+.header {
+    text-align: center;
+    padding: 40px 20px;
 }
 
-.contenedor-main_Pasteleria,.contenedor-main_Pastas ,.contenedor-main_Sandwicheria,.contenedor-main_Flanes {
-    width: 100%;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;    
-    text-align: center;    
-    
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
-
-.imagen-Pasteleria{
-    width: 100%;
-    height: 100%;
-    background-image: url('../img/Pasteleria.jpeg');
-    background-size: cover;
-    border: 1px solid #000;
-}
-.imagen-Pastas{
-    width: 100%;
-    height: 100%;
-    background-image: url('../img/Pastas.jpeg');
-    background-size: cover;
-    border: 1px solid #000;
-}
-.imagen-Sandwicheria{
-    width: 100%;
-    height: 100%;
-    background-image: url('../img/Sandwich.jpeg');
-    background-size: cover;
-    border: 1px solid #000;
-}
-.imagen-Flanes{
-    width: 100%;
-    height: 100%;
-    background-image: url('../img/Flanes.jpeg');
-    background-size: cover;
-    border: 1px solid #000;
-}
-#Pasteleria,#Pastas,#Sandwicheria,#Flanes{
-    margin: 0 5% 5% 5%;
+.header p {
+    font-size: 1.1rem;
+    color: #666;
 }
 
-button{
-    width: 100%;
-    height:12vh;    
-    padding: 10px;
-    font-size: 1.5em;
-    border-radius: 5px;
-    border: 1px solid #000;
-    background-color: #e6a4a4;
-    font-family: 'Lora', serif;
-    font-weight: bold;
+/* GRID */
+
+.grid-categorias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 40px;
 }
-button a{
-    text-decoration: none;
-    color: #000;
-}
-button:hover{
-    background-color: #d4d4d4;
-}
-button#btn-reinicio {
-    width: 10%;
-    height:5vh;     
-    font-size: 1em;    
-    border: none;
-    border-radius: 5px;
-    background-color: #989b9c;
-    
+
+/* CARD */
+
+.card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
-    text-decoration: none;
-    font-size: 0.8em;
-    border: 1px solid #000;
-    display: flex;
-    justify-content: center;
-        align-items: center;
+}
 
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
 }
-a{
-    color: #fff;
+
+/* IMAGEN */
+
+.imagen {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
 }
-#recetas-container_cuadraditos{
-    width: 20%;
-   
+
+/* Simulación imágenes (podés poner url reales después) */
+
+.imagen-pasteleria {
+    background: linear-gradient(45deg, #f6d365, #fda085);
+}
+
+.imagen-pastas {
+    background: linear-gradient(45deg, #84fab0, #8fd3f4);
+}
+
+.imagen-sandwicheria {
+    background: linear-gradient(45deg, #ffecd2, #fcb69f);
+}
+
+.imagen-flanes {
+    background: linear-gradient(45deg, #fbc2eb, #a6c1ee);
+}
+
+/* BOTÓN */
+
+.btn-categoria {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background: #333;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+.btn-categoria:hover {
+    background: #ff6b6b;
+}
+
+/* FOOTER */
+
+.footer {margin-bottom: 0%;
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
 }
 @media screen and (max-width: 768px) {
    
