@@ -47,7 +47,8 @@ export class CuadraditosClase {
                                                    <p>${total.toFixed(2)}</p>
                                                     <p>${(total - (total * ingrediente.limpio)).toFixed(2)}</p>
                                                     <p>${(total * ingrediente.cocido).toFixed(2)}</p>
-                                                 </section>                
+                                                 </section> 
+                                                             
                                            `;
                     });
                     if(crumble){
