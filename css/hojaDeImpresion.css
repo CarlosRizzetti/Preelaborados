@@ -7,44 +7,54 @@
 body {
     width: 100%;
     min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #fdfbfb, #ebedee);
+    color: #333;
 }
 
 header {
     width: 100%;
-    height: 15vh;
+    height: auto;
+    min-height: 12vh;
     font-size: 1.2em;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #0d81e0;
-    border: 1px solid #050505;
-    margin-bottom: 1%;
-    color: antiquewhite;
-    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+    margin-bottom: 2%;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
 }
-
 
 main {
     width: 90%;
-    margin: 0 5%; 
-    border: 0.5px solid #000;
-    background-color: #e6edf0;
+    margin: 0 5%;
+    border: none;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    padding: 20px;
 }
+
 .contenedor-main {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;    
-    text-align: center; 
-    background-color: white;  
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 12px;
 }
 
 #lista-recetas {
     width: 100%;
     height: auto;
 }
+
 .receta-item {
     width: 40%;
     height: auto;
@@ -54,212 +64,271 @@ main {
     border-radius: 5px;
 }
 
-p,h2 {
+p,
+h2 {
     width: 30%;
-    height: 100%;    
-    border: 1px solid #000;
+    height: 100%;
+    border: 1px solid #eaeaea;
     text-align: center;
-    
+    border-radius: 4px;
 }
+
 h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(69, 133, 6);
+    background: #ff6b6b;
     color: #fff;
-    font-family: 'Lora', serif;
+    font-family: 'Segoe UI', sans-serif;
+    border: none;
+    font-weight: 600;
 }
 
 #titulo-receta {
     width: 100%;
-    height: 10vh;
+    height: auto;
+    min-height: 10vh;
     display: flex;
-    justify-content: center ;
+    justify-content: center;
     align-items: center;
-    border-radius: 5px;    
+    border-radius: 5px;
     text-align: center;
     font-size: 2em;
-
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
-#masa-section-input{
+
+#masa-section-input {
     width: 100%;
     height: 10vh;
     display: flex;
     justify-content: start;
     align-items: center;
-    border-radius: 5px;    
+    border-radius: 8px;
     text-align: center;
-    font-size: 2em;
-    top: 0;
+    font-size: 1.5em;
+    background-color: #fdfdfd;
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+    padding: 0 20px;
 }
-.btn-receta-item{
+
+.btn-receta-item {
     width: 100%;
-    height: 9vh;  
-    margin: 0; 
-    border: 1px solid #000;
-    background-color: #e0e0e0;   
-    font-size: 0.9em;
+    height: 9vh;
+    margin: 0;
+    border: 1px solid #eaeaea;
+    background-color: #fcfcfc;
+    font-size: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    color: #555;
+    transition: background 0.3s;
 }
-.titulo-procedimiento{
+
+.btn-receta-item:hover {
+    background-color: #f2f2f2;
+}
+
+.titulo-procedimiento {
     width: 100%;
     height: auto;
+    padding: 15px;
     display: flex;
-    justify-content: center ;
+    justify-content: center;
     align-items: center;
-    border-radius: 5px;    
+    border-radius: 8px;
     text-align: center;
     font-size: 1.5em;
-    background-color: rgb(69, 133, 6);
+    background: linear-gradient(135deg, #4caf50, #81c784);
     color: #fff;
-    font-family: 'Lora', serif;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(76, 175, 80, 0.2);
 }
+
 .procedimiento-item {
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: start ;
-    align-items: center;    
-    text-align: center;
+    justify-content: start;
+    align-items: center;
+    text-align: left;
     border-radius: 5px;
+    padding: 10px;
+    border-bottom: 1px dashed #ddd;
+    background-color: #fafafa;
 }
+
 h4 {
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: start ;
-    align-items: center;    
-    text-align: center;
-    font-size: 1.2em;
-    font-family: 'Lora', serif;
-    
+    justify-content: start;
+    align-items: center;
+    text-align: left;
+    font-size: 1.1em;
+    font-family: 'Segoe UI', sans-serif;
+    color: #444;
 }
 
-label,h3 {
+label,
+h3 {
     width: 70%;
     height: 100%;
-    border: 1px solid #000;
-    align-items: start;
+    border: 1px solid #eaeaea;
+    align-items: center;
+    display: flex;
+    padding-left: 10px;
     font-size: 1em;
-    font-family: 'Lora', serif;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 500;
+    color: #333;
+    background: #fff;
 }
+
 h3 {
-    background-color: rgb(69, 133, 6);
+    background: #4caf50;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.8em;
+    font-size: 0.9em;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
 }
 
 input {
     width: 100%;
     height: 100%;
-    border: 1px solid #000;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     text-align: center;
-    font-size: 0.8em;
+    font-size: 0.9em;
+    outline: none;
+    transition: box-shadow 0.3s;
+}
+
+input:focus {
+    box-shadow: 0 0 5px rgba(255, 107, 107, 0.5);
+    border-color: #ff6b6b;
 }
 
 .receta-item {
-    width:100%;
+    width: 100%;
     height: auto;
-    display: flex;    
-    justify-content:center;
+    display: flex;
+    justify-content: center;
     align-items: center;
     text-align: center;
 }
-#recetas-lista{
+
+#recetas-lista {
     width: 100%;
-    height: 100%;   
-    display: flex;    
+    height: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .contenedor-item-impresion {
     width: 100%;
     min-height: auto;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;    
-    text-align: center;   
+    align-items: center;
+    text-align: center;
 }
-#btnImprimir,button#btn-reinicio {
-    width: 20%;
-    height: 50px; 
-    font-size: 1.2em;
-    margin: 2%;
-    border: none;
-    border-radius: 5px;
-    background-color: #989b9c;
-    color: #fff;
-    cursor: pointer;
-    text-decoration: none;
-}
+
+#btnImprimir,
+button#btn-reinicio,
 button#btn-inicio {
-    width: 20%;
-    height: 50px; 
-    font-size: 1.2em;
+    width: auto;
+    padding: 10px 25px;
+    height: 50px;
+    font-size: 1.1em;
+    font-weight: bold;
     margin: 2%;
     border: none;
-    border-radius: 5px;
-    background-color: #989b9c;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
     color: #fff;
     cursor: pointer;
     text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
-a{
+
+#btnImprimir:hover,
+button#btn-reinicio:hover,
+button#btn-inicio:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: #ff6b6b;
+    transform: translateY(-2px);
+}
+
+a {
     text-decoration: none;
     color: #fff;
 }
 
-#hoja-impresion-container{
+#hoja-impresion-container {
     width: 70%;
     min-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
     text-align: center;
-     
+
 }
-#lista-recetas{
+
+#lista-recetas {
     width: 100%;
-    min-height: auto;    
+    min-height: auto;
     margin-top: 2%;
 }
-#masaCantidadCuadraditos{
+
+#masaCantidadCuadraditos {
     width: 100%;
-    height: 7vh;  
-    margin-left: 2%; 
+    height: 7vh;
+    margin-left: 2%;
     border: 1px solid #000;
     font-size: 0.7em;
     text-align: center;
 }
-.descripcion-producto-item{
+
+.descripcion-producto-item {
     width: 100%;
     height: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #000;
-    margin-top:0;
+    margin-top: 0;
     font-size: 1em;
-    color: #000;    
+    color: #000;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.titulo-crumble, .titulo-agregados, .titulo-mermelada {
+
+.titulo-crumble,
+.titulo-agregados,
+.titulo-mermelada {
     width: 70%;
     height: auto;
     font-size: 1em;
     font-weight: bold;
-    
+
 }
-.descripcion-producto-item_cantidad{
+
+.descripcion-producto-item_cantidad {
     width: 100%;
     height: 5vh;
     display: flex;
@@ -269,7 +338,7 @@ a{
     margin-top: 1.5%;
     margin-bottom: 0;
     font-size: 1em;
-    color: #000000;    
+    color: #000000;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: yellow;
 }
@@ -277,14 +346,18 @@ a{
 @media print {
     main {
         height: auto;
-        min-height: auto ;
+        min-height: auto;
     }
-    body *{
+
+    body * {
         visibility: hidden;
     }
-    #hoja-impresion-container, #hoja-impresion-container * {
+
+    #hoja-impresion-container,
+    #hoja-impresion-container * {
         visibility: visible;
     }
+
     #hoja-impresion-container {
         position: absolute;
         left: 0;
@@ -295,15 +368,17 @@ a{
         padding: 0;
     }
 }
+
 @media screen and (max-width: 968px) {
-   
-    *{
+
+    * {
         font-size: 0.8em;
     }
 }
+
 @media screen and (max-width: 320px) {
-   
-    *{
+
+    * {
         font-size: 0.5em;
     }
 }

@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/hojaDeImpresion.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;800&display=swap" rel="stylesheet">
+    <title>Receta | Sabores Caseros</title>
 </head>
+
 <body>
     <header>
         <h1 class="titulo-recetas"></h1>
-        
+
         <button class="btn-imprimir">Imprimir</button>
     </header>
     <main>
         <section class="contenedor-main">
             <section class="contenedor-item-impresion">
-            <section id="lista-recetas">
-                <section id="masa-section-input">
-                    <label id="masa_cantidad_label">Cantidad de masa</label>
-                    <input type="number" id="masaCantidad" placeholder="Ingrese la cantidad">
+                <section id="lista-recetas">
+                    <section id="masa-section-input">
+                        <label id="masa_cantidad_label">Cantidad de masa</label>
+                        <input type="number" id="masaCantidad" placeholder="Ingrese la cantidad">
+                    </section>
                 </section>
+                <section id="hoja-impresion-container"></section>
             </section>
-            <section id="hoja-impresion-container"></section>
-        </section>        
         </section>
     </main>
     <footer>
-        
+
     </footer>
-    
+
     <script type="module" src="./js/hojaDeImpresion.js"></script>
     <script type="module" src="./js/index.js"></script>
-    
+
 </body>
+
 </html>
