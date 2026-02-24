@@ -62,8 +62,13 @@ btn.forEach(button => {
             contenedorMain.innerHTML = `
             <button id="recetas-container_Flanes"><a href="hojaDeImpresion.html?sector=Flanes" target="_blank">Flanes</a></button>
             <button id="recetas-container_Gelatinas"><a href="hojaDeImpresion.html?sector=Gelatinas" target="_blank">Gelatinas</a></button>
-            <button id="recetas-container_Postres"><a href="hojaDeImpresion.html?sector=Postres" target="_blank">Postres</a></button>
-               
+            <button id="recetas-container_Postres"><a href="hojaDeImpresion.html?sector=Postres" target="_blank">Postres</a></button>               
+            `;
+            header.innerHTML +=`<button id="btn-reinicio"><a href="index.html">Inicio</a></button>`;
+        }
+        if (button.id === 'Agregar') {
+            contenedorMain.innerHTML =  `
+            <button id="recetas-container_Agregar"><a href="agregarReceta.html" target="_blank">Agregar Receta</a></button>
             `;
             header.innerHTML += `<button id="btn-reinicio"><a href="index.html">Inicio</a></button>`;
         }
